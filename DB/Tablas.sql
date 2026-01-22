@@ -29,7 +29,8 @@ moneda int,
 FechaCrea datetime,
 FechaFinaliza datetime,
 monto money,
-montoPendiente money
+montoPendiente money,
+estado char(1)
 primary key(id)
 foreign key(idProducto) references Producto(id)
 )
