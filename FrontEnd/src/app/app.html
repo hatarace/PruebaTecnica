@@ -1,0 +1,18 @@
+<button matButton [matMenuTriggerFor]="menu">
+  <mat-icon>menu</mat-icon>
+  <h2>Geneses</h2> 
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/dashboard">
+    <mat-icon>home</mat-icon>
+    Dashboard
+  </button>
+  <button mat-menu-item routerLink="/transacciones">
+    <mat-icon>perm_identity</mat-icon>
+    Transacciones
+  </button>
+  <button mat-menu-item routerLink="/cuentas">
+    <mat-icon>attach_money</mat-icon>
+    Cuentas
+  </button> 
+</mat-menu>
